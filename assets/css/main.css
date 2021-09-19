@@ -1307,7 +1307,7 @@ button:disabled,
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   #footer {
     bottom: 1.25em;
     left: 1.25em;
