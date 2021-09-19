@@ -1,32 +1,53 @@
 <!DOCTYPE HTML>
-<html lang="en"></html>
-	<head>
-		<title>blackfriars.tech | coming soon</title>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<html lang="en">
 
-		<!-- Header -->
-			<header id="header">
-				<img src="images/logo-white.png" alt="Logo Black Friars LTD" style="width: 55vw;">	
-				<p style="margin: 50px 20px 0px 0px; text-align: right;"><em>Never was anything great achieved without danger.</em></p>
-				<p style="margin: 20px 0px; text-align: right;">Niccolò Machiavelli</p>
-			</header>
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li style="padding: 0 0;"><a href="mailto:info@blackfriars.tech" class="icon fa-envelope fa-4x"><span class="label">Email</span></a></li>
-				</ul>
-				<!-- <ul class="copyright">
-					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul> -->
-			</footer>
+</html>
 
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+<head>
+	<title>blackfriars.tech | coming soon</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
 
-	</body>
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<img id="logo" src="images/logo-white.png" alt="Logo Black Friars LTD">
+		<p style="margin: 40px 0px;" id="app"></p>
+	</header>
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+			<li style="padding: 0 0;"><a href="mailto:info@blackfriars.tech" class="icon fa-envelope fa-4x"><span
+						class="label">Email</span></a></li>
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/main.js"></script>
+	<script>
+		var app = document.getElementById('app');
+
+		var typewriter = new Typewriter(app, {
+			loop: true
+		});
+
+		typewriter.typeString('> Software development')
+			.pauseFor(2500)
+			.deleteAll()
+			.typeString('> System integration')
+			.pauseFor(2500)
+			.deleteAll()
+			.typeString('> Robotic Process Automation')
+			.pauseFor(2500)
+			.deleteAll()
+			.start();
+	</script>
+
+</body>
+
 </html>
