@@ -1307,7 +1307,7 @@ button:disabled,
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
   #footer {
     bottom: 1.25em;
     left: 1.25em;
@@ -1319,7 +1319,7 @@ button:disabled,
   #app {
     padding-left: 0px;
     text-align: left;
-    font-size: 1em !important;
+    font-size: 1.5em !important;
   }
   
 }
