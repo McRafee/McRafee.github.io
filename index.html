@@ -1,53 +1,98 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
-	<title>blackfriars.tech | coming soon</title>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI - Command Line Interface | blackfriars.tech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 
-<body class="is-preload">
+<body>
+    
+    <main>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo-white.png" alt="Logo Black Friars LTD">
+            </div>
+            <div class=fakeMenu>
+                <div class="fakeButtons fakeClose"></div>
+                <div class="fakeButtons fakeMinimize"></div>
+                <div class="fakeButtons fakeZoom"></div>
+            </div>
+            <div class="fakeScreen">
+                <div class="display">
+                    <div class="interface">
+                        <section id="home">
+                            <h2><span>&raquo; CLI - Command Line Interface | blackfriars.tech</span></h2>
+                            <p>You don't need to be Mr Robot to use the terminal, you just need a little
+                                self-confidence.
+                            </p>
+                            <p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+                        </section>
 
-	<!-- Header -->
-	<header id="header">
-		<img id="logo" src="images/logo-white.png" alt="Logo Black Friars LTD">
-		<p style="margin: 40px 0px;" id="app"></p>
-	</header>
-	<!-- Footer -->
-	<footer id="footer">
-		<ul class="icons">
-			<li style="padding: 0 0;"><a href="mailto:info@blackfriars.tech" class="icon fa-envelope fa-4x"><span
-						class="label">Email</span></a></li>
-		</ul>
-	</footer>
+                        <section id="about">
+                            <h2><span>&raquo; About | blackfriars.tech</span></h2>
+                            <p>This is a small manifesto.<br></p>
+                            <p>One mission: to help companies and people to use technology with awareness, without fear.<br>
+                            </p>
+                            <p>Minimize frustration and complexity to focus on business and the beauty that
+                                surrounds
+                                us.<br>
+                            </p>
+                            <p>Time is precious and must not be wasted, everything that is boring and repetitive for
+                                a
+                                human
+                                must be robotically automated.<br></p>
+                        </section>
 
-	<!-- Scripts -->
-	<script src="assets/js/main.js"></script>
-	<script>
-		var app = document.getElementById('app');
+                        <section id="services">
+                            <h2><span>&raquo; Services | blackfriars.tech</span></h2>
+                            <ul>
+                                <li><strong>SOFTWARE DEVELOPMENT</strong></li>
+                                <li><strong>SYSTEM INTEGRATION</strong></li>
+                                <li><strong>ROBOTIC PROCESS AUTOMATION</strong></li>
+                            </ul>
+                        </section>
 
-		var typewriter = new Typewriter(app, {
-			loop: true
-		});
+                        <section id="contact">
+                            <h2><span>&raquo; Contact</span></h2>
+                            <p>How can we help? <a
+                                    href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#98;&#108;&#97;&#99;&#107;&#102;&#114;&#105;&#97;&#114;&#115;&#46;&#116;&#101;&#99;&#104;?Subject=Contact%20from%20CLI%20-%20blackfriars.tech&body=write%20here%20anything%20you%20want">Click
+                                    here to send an email!</a></br>
+                            </p>
+                        </section>
 
-		typewriter.typeString('> Software development')
-			.pauseFor(2500)
-			.deleteAll()
-			.typeString('> System integration')
-			.pauseFor(2500)
-			.deleteAll()
-			.typeString('> Robotic Process Automation')
-			.pauseFor(2500)
-			.deleteAll()
-			.start();
-	</script>
+                        <section id="error">
+                            <p>Command not found!<p>
+                                    <p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+                        </section>
 
+                        <section id="help">
+                            <h2><span>&raquo; Help?</span></h2>
+                            <p><span>Type [command] + <kbd>Enter</kbd></span></p>
+                            <ul>
+                                <li>'home' -- Starting point</li>
+                                <li>'about' -- Who we are</li>
+                                <li>'services' -- What we do</li>
+                                <li>'contact' -- Send a message</li>
+                                <li>'help' -- displays this list</li>
+                            </ul>
+                        </section>
+
+                        <span class="command">johnDoe@HAL9000:~$<input type="text" autofocus></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
