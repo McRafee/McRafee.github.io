@@ -51,7 +51,7 @@ $('section').each( function(i,e) {
     if(e.which == 13){// ENTER key pressed
 
       $('.command').hide();
-      var destination = $('input[type="text"]').val().toLowerCase();
+      var destination = $('input[type="text"]').val().toLowerCase().trim();
 
       // Display section with id == destination and hide all others
       $('section[id="' + destination + '"]').addClass('open').siblings().removeClass('open');
