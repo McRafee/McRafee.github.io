@@ -63,7 +63,7 @@ main {
     width: 50vw;
     box-sizing: border-box;
     height: 25px;
-    background-color: #bbb;
+    background-color: #323435;
     margin: 0 auto;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -73,7 +73,7 @@ main {
     background-color: rgba(0, 0, 0, 0.7);
     box-sizing: border-box;
     width: 50vw;
-    height: 50vh;
+    height: 405px;
     margin: 0 auto;
     padding: 20px;
     border-bottom-left-radius: 5px;
@@ -81,12 +81,14 @@ main {
 }
 
 .interface {
-    font: .875em/1.6 'Inconsolata', monospace;
+    font: 20px 'Inconsolata', monospace;
     color: #fff;
     font-weight: 400;
-    max-width: 45vw;
-    padding: 1em;
-    margin: 5% 0;
+    max-width: 50vw;
+    max-height: 300px;
+    padding: 5px;
+    margin: 1% 0;
+    overflow-y: scroll ;
 }
 
 ::selection {
@@ -152,6 +154,7 @@ input[type="text"] {
     font-family: inherit;
     background: transparent;
     padding: 0 .5em;
+    font-size: 20px;
 }
 
 input[type="text"]:focus {
@@ -193,6 +196,11 @@ section {
     
     .logo img {
         width: 40vw;
+    }
+
+    .interface,
+    input[type="text"] {
+        font-size: 15px;
     }
 
 }
